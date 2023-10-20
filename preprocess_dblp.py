@@ -1,3 +1,10 @@
+import re
+import collections
+from sklearn.preprocessing import MultiLabelBinarizer
+
+# Define 'p_path' and 't_path' with appropriate file paths
+p_path = 'path_to_p_file.txt'  # Replace with the actual path to your data file
+t_path = 'path_to_t_file.txt'
 
 all_keyword_list = []
 with open(p_path, 'r', encoding='utf-8') as f:
